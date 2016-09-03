@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-US" class="no-js">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Strona promocyjna ITAD na Politechnice Poznańskiej">
-		<meta name="author" content="Grupa.NET PUT.NET ITAD  2016r.">
-		<title>ITAD</title>
-		<link href="./styles/site.css" " rel="stylesheet">
+<html lang="pl-PL" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Strona promocyjna ITAD na Politechnice Poznańskiej">
+    <meta name="author" content="Grupa.NET PUT.NET ITAD  2016r.">
+    <title>ITAD</title>
+    <link href="./styles/site.css" rel="stylesheet">
+    <script src="./scripts/site.js"></script>
 	</head>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		 <!-- Navigation -->
@@ -56,12 +58,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Grayscale</h1>
-                        <p class="intro-text">A free, responsive, one page Bootstrap theme.
-                            <br>Created by Start Bootstrap.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                        <h1>IT ACADEMIC DAY</h1>
+                        <p class="intro-text">Największa konferencja IT Politechniki Poznanskiej.</p>
                     </div>
                 </div>
             </div>
@@ -70,12 +68,127 @@
 
     <!-- News Section -->
     <section id="news" class="container content-section text-center">
+        <!-- HERE REPLACE TEMPORARY CONTENT TO DISPLAY NEW NEWS -->
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+                <div id="news-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#news-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#news-carousel" data-slide-to="1"></li>
+                        <li data-target="#news-carousel" data-slide-to="2"></li>
+                        <li data-target="#news-carousel" data-slide-to="3"></li>
+                        <li data-target="#news-carousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                        <div class="item active">
+                            <!--Mask color-->
+                            <div class="view hm-black-light">
+                                <img src="./images/carousel-item-1.jpg" class="img-fluid" alt="new fantastic news //Nurek pls insert alternative text">
+                                <div class="full-bg-img">
+                                </div>
+                            </div>
+                            <!--Caption-->
+                            <div class="carousel-caption">
+                                <div class="animated fadeInDown">
+                                    <h3 class="h3-responsive">First Intro</h3>
+                                    <p>Today we done basic site settings</p>
+                                </div>
+                            </div>
+                            <!--Caption-->
+                        </div>
+                        <!--/First slide-->
+
+                        <!--Second slide-->
+                        <div class="item">
+                            <!--Mask color-->
+                            <div class="view hm-black-strong">
+                                <img src="./images/carousel-item-2.jpg" class="img-fluid" alt="another fantastic news">
+                                <div class="full-bg-img">
+                                </div>
+                            </div>
+                            <!--Caption-->
+                            <div class="carousel-caption">
+                                <div class="animated fadeInDown">
+                                    <h3 class="h3-responsive">Secound Intro</h3>
+                                    <p>Secondary text</p>
+                                </div>
+                            </div>
+                            <!--Caption-->
+                        </div>
+                        <!--/Second slide-->
+
+                        <!--Third slide-->
+                        <div class="item">
+                            <!--Mask color-->
+                            <div class="view hm-black-slight">
+                                <img src="./images/carousel-item-3.jpg" class="img-fluid" alt="">
+                                <div class="full-bg-img">
+                                </div>
+                            </div>
+                            <!--Caption-->
+                            <div class="carousel-caption">
+                                <div class="animated fadeInDown">
+                                    <h3 class="h3-responsive">Super light mask</h3>
+                                    <p>Secondary text</p>
+                                </div>
+                            </div>
+                            <!--Caption-->
+                        </div>
+                        <!--/Third slide-->
+
+                        <!--Fourth slide-->
+                        <div class="item">
+                            <!--Mask color-->
+                            <div class="view hm-black-slight">
+                                <img src="./images/carousel-item-3.jpg" class="img-fluid" alt="">
+                                <div class="full-bg-img">
+                                </div>
+                            </div>
+                            <!--Caption-->
+                            <div class="carousel-caption">
+                                <div class="animated fadeInDown">
+                                    <h3 class="h3-responsive">Super light mask</h3>
+                                    <p>Secondary text</p>
+                                </div>
+                            </div>
+                            <!--Caption-->
+                        </div>
+                        <!--/Fourth slide-->
+
+                        <!--Fourth slide-->
+                        <div class="item">
+                            <!--Mask color-->
+                            <div class="view hm-black-slight">
+                                <img src="./images/carousel-item-3.jpg" class="img-fluid" alt="">
+                                <div class="full-bg-img">
+                                </div>
+                            </div>
+                            <!--Caption-->
+                            <div class="carousel-caption">
+                                <div class="animated fadeInDown">
+                                    <h3 class="h3-responsive">Super light mask</h3>
+                                    <p>Secondary text</p>
+                                </div>
+                            </div>
+                            <!--Caption-->
+                        </div>
+                        <!--/Fourth slide-->
+                    </div>
+                    <!--/.Slides-->
+
+                    <!--Controls-->
+                    <a class="left carousel-control" href="#news-carousel" role="button" data-slide="prev">
+                        <span class="icon-prev" aria-hidden="true"></span>
+                        <span class="sr-only">Poprzedni</span>
+                    </a>
+                    <a class="right carousel-control" href="#news-carousel" role="button" data-slide="next">
+                        <span class="icon-next" aria-hidden="true"></span>
+                        <span class="sr-only">Następny</span>
+                    </a>
+                    <!--/.Controls-->
+                </div>
             </div>
         </div>
     </section>
@@ -116,18 +229,15 @@
         </div>
     </section>
 
+
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
             </div>
         </div>
     </section>
 
 	</body>
-    <script src="scripts/site.js" type="text/javascript"></script>
+    
 </html>
