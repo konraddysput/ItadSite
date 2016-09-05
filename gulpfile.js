@@ -26,9 +26,13 @@ gulp.task('custom-styles', function(){
 
 //concat css files
 gulp.task('styles', function(){
-	 return gulp.src('build/styles/*.css')
+	setTimeout(function(){
+		console.log("Delay");
+		 return gulp.src('build/styles/*.css')
     		.pipe(concat('site.css'))
-		    .pipe(gulp.dest('styles'));
+		    .pipe(gulp.dest('styles')); }, 3000);
+
+	
 	 	// gulp.src('build/styles/*.css')				//load files
 		// .pipe(plumber())
 		// .pipe(gulp.dest('build/styles'))		//we saving them - output
@@ -52,7 +56,7 @@ gulp.task('watch', function(){
 	var server = livereload();
 
 	gulp.watch('build/scripts/*.js', ['scripts']);
-	gulp.watch('build/styles/*.scss',['custom-styles']);
+	gulp.watch('build/styles/*.scss',['custom-styles','styles']);
 })
 
 

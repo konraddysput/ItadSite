@@ -1,4 +1,89 @@
+$box-size-x : 90px;
+$box-size-y : 90px;
 body{
     background:white !important;
     color:black;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	// perspective: 1000px;
+    margin: 5px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+
+.flip-container, .front, .back {
+	width: $box-size-x;
+	height: $box-size-y;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+    background-color: #454545;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+
+}
+
+
+.partner-logo{
+    display:inline;
+    .img-logo{    
+        width:200px;
+        height:200px;
+        float:left;
+    }
+}
+
+.about-partner{
+    padding-left:10%;
+    display:inline-block;
+    width:70%;
+    text-align:justify;
+}
+
+
+.yellow{
+    background-color: #ffeb3b;
+}
+
+.red{
+    background-color: #f44336;
+}
+
+.blue{
+    background-color: #2196f3;
+}
+
+.green{
+    background-color: #4caf50;
+}
+
+.itad{
+	background-color: #9a9a9a;
 }
