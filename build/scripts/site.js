@@ -11,4 +11,15 @@ function initializeComponents(){
     $('.carousel').carousel({
         interval: 2000
     });
+    initTimeline();
+}
+
+function initTimeline(){
+    $('.timeline').timelify({
+			animLeft: "fadeInLeft",
+		animCenter: "fadeInUp",
+		animRight: "fadeInRight",
+		animSpeed: 600,
+		offset: 150
+	});
 }
