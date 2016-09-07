@@ -1,5 +1,8 @@
 $box-size-x : 90px;
 $box-size-y : 90px;
+
+
+
 body{
     background:white !important;
     color:black;
@@ -117,3 +120,33 @@ body{
   font-size: 16px;
 }
 
+
+
+.carousel{
+    margin-left: -7.666%;
+    margin-right: -7.666%;
+}
+
+
+.timeline .timeline-items{
+        padding-top: 20px !important;
+        li{
+            margin-bottom: 20px !important;
+            padding-bottom: 10px !important;
+            h3,
+            h5,
+            time{
+                text-align: center !important;
+                display:block !important;
+                margin: 0 0 5px !important;
+            }
+        }
+}
+
+.carousel-inner>.item{
+    height: 450px !important;
+}
+.owl-carousel img{
+    width:120px;
+    height: 120px;
+}
