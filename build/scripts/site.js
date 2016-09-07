@@ -9,17 +9,22 @@ function initializeComponents(){
 
     //set carousels
     $('.carousel').carousel({
-        interval: 2000
+        interval: 5000
     });
     initTimeline();
+    initOwlCarousel();
+}
+
+function initOwlCarousel(){
+      $("#media-partners").owlCarousel();
 }
 
 function initTimeline(){
     $('.timeline').timelify({
-			animLeft: "fadeInLeft",
-		animCenter: "fadeInUp",
-		animRight: "fadeInRight",
+        animLeft: "fadeInRight",
+        // animLeft: "",
+		animRight: "fadeInLeft",
 		animSpeed: 600,
-		offset: 150
+		offset: 0
 	});
 }
