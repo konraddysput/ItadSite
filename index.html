@@ -10,6 +10,9 @@
     <link href="./styles/site.css" rel="stylesheet">
     <link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
     <script src="./scripts/site.js"></script>
+
+    <link rel="stylesheet" href="flipclock.css">
+    <script src="flipclock.js"></script>
 	</head>
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 		 <!-- Navigation -->
@@ -473,17 +476,37 @@
                         </div>
                         <!--Intro Text -->
                         <div class="intro-header">
-                        <h1>IT ACADEMIC DAY</h1>
-                        <p class="intro-text">Największa konferencja IT Politechniki Poznanskiej.</p>
+                          <h1>IT ACADEMIC DAY</h1>
+                          <p class="intro-text"><small>Największa konferencja IT Politechniki Poznanskiej.</small></p>
                         <!--/Intro Text -->
-                    </div>
+
+                          <div class="clock center"></div>
+                          <div class="message"></div>
+
+                          <script type="text/javascript">
+
+                            $(document).ready(function() {
+                              var clock;
+                              var itadTime = new Date("Oct 19, 2016 13:30:00");
+                              var currentTime = new Date();
+                              var timeSpan = (itadTime.getTime() - currentTime.getTime())/1000;
+                              clock = $('.clock').FlipClock({
+                                clockFace: 'DailyCounter',
+                                countdown: true
+                              });
+                              clock.setTime(timeSpan);
+                              clock.start();
+                              });
+                            </script>
+                        </div>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- News Section -->
-    <section id="news" class="container content-section text-center">
+    <div class="white news">
+      <section id="news" class="container content-section text-center">
 
         <!-- HERE REPLACE TEMPORARY CONTENT TO DISPLAY NEW NEWS -->
         <div class="row">
@@ -612,9 +635,11 @@
             </div>
         </div>
     </section>
+    </div>
 
  <!-- Agenda Section -->
-    <section id="agenda" class="container content-section text-center">
+    <div class="black">
+      <section id="agenda" class="container content-section text-center">
         <div class="row">
            <div class="timeline">
                 <h2>12:00</h2>
@@ -728,8 +753,10 @@
             </div>
         </div>
     </section>
+    </div>
 
 <!-- Partners Section -->
+<div class="white">
     <section id="partners" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -751,53 +778,52 @@
               </div>
         </div>
     </section>
-
+</div>
     <!-- Localization Section -->
-    <section id="localization" class="container content-section text-center">
+    <div class="black localization">
+    <section id="localization" class="container content-section text-left">
         <div class="row">
-            <div class="row">
             <!-- Map Section -->
-            <div id="map"></div>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-sm-6 lokal">
+                <br />
                 <h2>Lokalizacja </h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+                <p class="left">Centrum wykładowe PP</p>
+                <p class="left">Sala 4 - Aula Główna</p>
+                <p class="left">Ul. Piotrowo 4a</p>
+            </div>
+            <div class="col-sm-6">
+              <div id="map"></div>
             </div>
         </div>
     </section>
-
+</div>
 
     <!-- Contact Section -->
+    <div class="black">
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
               <h2>Kontakt</h2>
                 <p>
                   <div class="form-inline">
-                    <div class="form-group contact-description-left">
-                      <b>EMAIL</b><br/>
-                      Lorem@ipsum.dolor
-                    </div>
-                    <a style="color:white;"><div class="form-group contact-icon red"><div class="contact-rotate-icon"><i class="mdi mdi-email"></i></div></div></a>
-                    <a style="color:white;"><div class="form-group contact-icon green"><div class="contact-rotate-icon"><i class="mdi mdi-phone"></i></div></div></a>
-                    <div class="form-group contact-description-right">
-                      <b>TELEFON</b><br/>
-                      666-666-666
-                    </div>
+                    <a class="contact-icon" data-toggle="popover" data-placement="bottom" title="EMAIL" data-content="test@test.pl" style="color:white;"><i class="mdi mdi-email mdi-48px"></i></a>
+                    <a class="contact-icon" style="color:white;" href="https://www.facebook.com/itadpoznan/?fref=ts"><i class="mdi mdi-facebook mdi-48px"></i></a>
+                    <a class="contact-icon" style="color:white;" href="https://www.facebook.com/put.net/?fref=ts"><i class="mdi mdi-twitter mdi-48px"></i></a>
+                    <a class="contact-icon" data-toggle="popover" data-placement="bottom" title="TELEFON" data-content="666-666-666" style="color:white;"><i class="mdi mdi-phone mdi-48px"></i></a>
                   </div>
                 </p>
-                <p>
-                  <div class="form-inline">
-                    <a style="color:white;" href="https://www.facebook.com/itadpoznan/?fref=ts"><div class="form-group contact-icon blue"><div class="contact-rotate-icon"><i class="mdi mdi-facebook"></i></div></div></a>
-                    <a style="color:white;" href="https://www.facebook.com/put.net/?fref=ts"><div class="form-group contact-icon yellow"><div class="contact-rotate-icon"><i class="mdi mdi-twitter"></i></div></div></a>
-                  </div>
-                </p>
+                <script>
+                  $(function () {
+                    $('[data-toggle="popover"]').popover()
+                  })
+                </script>
+                <div>
+
+                </div>
             </div>
         </div>
     </section>
-
+  </div>
 	</body>
 
 </html>
