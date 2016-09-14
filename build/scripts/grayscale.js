@@ -48,7 +48,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(52.403744, 16.949434), // CW PUT Poznań
+        center: new google.maps.LatLng(52.403744, 16.949434), // New York
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -163,7 +163,7 @@ function init() {
                 "lightness": 17
             }, {
                 "weight": 1.2
-            }]
+            }]  
         }]
     };
 

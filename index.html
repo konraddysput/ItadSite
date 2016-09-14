@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="clock center" style="width:55%;"><h2>clock</h2></div>
+                            <div class="clock center clock-container-position"><h2>clock</h2></div>
                             <div class="message"></div>
                         </div>
                     </div>
@@ -392,7 +392,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="partner-logo">
-                            <img class="img-logo" src="./img/partners/logo-microsoft.png">
+                            <img class="img-logo" src="./img/partners/logo-microsoft.png" alt="Microsoft">
                         </div>
                         <div class="row">
                             <label>Microsoft</label>
@@ -493,7 +493,7 @@
                 <p class="left">Ul. Piotrowo 4a</p>
             </div>
             <div class="col-sm-6">
-              <div id="map"></div>
+              <div id="map" style="overflow:hidden !Important"></div>
             </div>
         </div>
     </section>
@@ -509,47 +509,47 @@
               
                 <div class="row">
                     <div class="col-lg-4 col-xs-4">
-                        <img class="img-circle organizer-avatar" id="julian" src="img/organizers/julian.jpg">
+                        <img class="img-circle img-responsive organizer-avatar" src="img/organizers/julian.jpg" alt="Mateusz Bartos">
                         <h4 class="text-centered btn-block">Mateusz<br/>Bartos</h4>
                     </div>
                     <div class="col-lg-4 col-xs-4">
-                        <img class="img-circle organizer-avatar" id="dondrad" src="img/organizers/dondrad.jpg">
+                        <img class="img-circle img-responsive organizer-avatar" src="img/organizers/dondrad.jpg" alt="Konrad Dysput">
                         <h4 class="text-centered btn-block">Konrad<br/>Dysput</h4>
                     </div>
                     <div class="col-lg-4 col-xs-4">
-                        <img class="img-circle organizer-avatar" id="uysy" src="img/organizers/uysy.jpg">
+                        <img class="img-circle img-responsive organizer-avatar" src="img/organizers/uysy.jpg" alt="Dawid Chróścielski">
                         <h4 class="text-centered btn-block">Dawid<br/>Chróścielski</h4>
                     </div>
                     <div class="col-lg-4 col-xs-4">
-                        <img class="img-circle organizer-avatar" id="wojtek" src="img/organizers/wojtek.jpg">
+                        <img class="img-circle img-responsive organizer-avatar" src="img/organizers/wojtek.jpg" alt="Wojtek Agaciński">
                         <h4 class="text-centered btn-block">Wojciech<br/>Agaciński</h4>
                     </div>
                     <div class="col-lg-4 col-xs-4">
-                        <img class="img-circle organizer-avatar" id="wojtek" src="img/organizers/piotr.jpg">
+                        <img class="img-circle img-responsive organizer-avatar"src="img/organizers/piotr.jpg" alt="Jakub Piotr">
                         <h4 class="text-centered btn-block">Jakub<br/>Piotr</h4>
                     </div>
                     <div class="col-lg-4 col-xs-4">
-                        <img class="img-circle organizer-avatar" id="robert" src="img/organizers/robert.jpg">
+                        <img class="img-circle img-responsive organizer-avatar" src="img/organizers/robert.jpg" alt="Robert Janczak">
                         <h4 class="text-centered btn-block">Robert<br/>Janczak</h4>
                     </div>
                     <div class="col-lg-4 col-xs-4">
-                        <img class="img-circle organizer-avatar" id="radeg" src="img/organizers/radeg.jpg">
+                        <img class="img-circle img-responsive organizer-avatar" src="img/organizers/radeg.jpg" alt="Radek Waberski">
                         <h4 class="text-centered btn-block">Radosław<br/>Waberski </h4>
                     </div>
                     <div class="col-lg-4 col-xs-4">
-                        <img class="img-circle organizer-avatar" id="nurek" src="img/organizers/nurek.jpg">
+                        <img class="img-circle img-responsive organizer-avatar" src="img/organizers/nurek.jpg" alt="Jakub Nurski">
                         <h4 class="text-centered btn-block">Jakub<br/>Nurski</h4>
                     </div>
                     <div class="col-lg-4 col-xs-4">
-                        <img class="img-circle organizer-avatar" id="grzegorz" src="img/organizers/grzegorz.jpg">
+                        <img class="img-circle img-responsive organizer-avatar" src="img/organizers/grzegorz.jpg" alt="Grzegorz Kotlarz">
                         <h4 class="text-centered btn-block">Grzegorz<br/>Kotlarz</h4>
                     </div>
                     <div class="col-lg-4 col-xs-4 col-lg-offset-2 col-xs-offset-2" hidden>
-                        <img class="img-circle organizer-avatar" id="sylwia" src="">
+                        <img class="img-circle organizer-avatar img-responsive" src="">
                         <h4 class="text-centered btn-block">Sylwia</br>Kopczyńska</h4>
                     </div>
                     <div class="col-lg-4 col-xs-4" hidden>
-                        <img class="img-circle organizer-avatar" id="przemek" src="">
+                        <img class="img-circle organizer-avatar img-responsive" src="">
                         <h4 class="text-centered btn-block">Przemysław<br/>Walkowiak</h4>
                     </div>
              
@@ -563,14 +563,22 @@
     <div class="black">
     <section id="contact" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-10  col-lg-offset-1">
               <h2>Kontakt</h2>
                 <p>
                   <div class="form-inline">
-                    <a class="contact-icon" data-toggle="popover" data-placement="bottom" title="EMAIL" data-content="test@test.pl" style="color:white;"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
-                    <a class="contact-icon" style="color:white;" href="https://www.facebook.com/itadpoznan/?fref=ts"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
-                    <a class="contact-icon" style="color:white;" href="https://www.facebook.com/put.net/?fref=ts"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-                    <a class="contact-icon" data-toggle="popover" data-placement="bottom" title="TELEFON" data-content="666-666-666" style="color:white;"><i class="fa fa-phone fa-3x" aria-hidden="true"></i></a>
+                    <a class="contact-icon" data-toggle="popover" data-placement="bottom" title="EMAIL" data-content="test@test.pl" style="color:white;">
+                        <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                    </a>
+                    <a class="contact-icon" style="color:white;" href="https://www.facebook.com/itadpoznan/?fref=ts">
+                        <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                    </a>
+                    <a class="contact-icon" style="color:white;" href="https://www.facebook.com/put.net/?fref=ts">
+                        <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                    </a>
+                    <a class="contact-icon" data-toggle="popover" data-placement="bottom" title="TELEFON" data-content="123-456-789" style="color:white;">
+                        <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                    </a>
                   </div>
                 </p>
             </div>
@@ -578,6 +586,7 @@
     </section>
 
   </div>
-    <script src="./scripts/site.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <script src="./scripts/site.js"></script>    
 	</body>
 </html>

@@ -14,10 +14,31 @@ $itad-8: #4ab43a;
 $itad-9: #794489;
 $itad-10: #00969c;
 
+.clock-container-position{
+  width:60% !important;
+  padding-left:80px !important;
+}
+
+.flip-clock-label{
+  display:none !important;
+}
+
+
+.intro-body{
+  background-color: white  !important;
+}
+ 
+.intro{
+  background-color: #ffffff  !important;
+}
+ 
+
 @media screen and (max-width: 1200px) {
-  .clock {
+  .clock,
+  #map {
     display: none;
   }
+  
 }
 
 .table{
@@ -249,7 +270,7 @@ p{
   margin-top: -70px !important;
   min-height: 500px;
   min-width: 500px;
-  width: 150% !important;
+  width: 100% !important;
   right: -100px;
 }
 
