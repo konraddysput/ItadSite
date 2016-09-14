@@ -13,7 +13,8 @@ function initializeComponents(){
     });
     //setup timer
     initTimeClock();
-    $('[data-toggle="popover"]').popover();                  
+    $('[data-toggle="popover"]').popover();        
+     initTimeline();          
 }
 
 function initTimeClock(){
@@ -45,4 +46,15 @@ function setupLogo(){
         }
        
     });
+}
+
+
+function initTimeline(){
+    $('.timeline').timelify({
+        animLeft: "fadeInRight",
+        // animLeft: "",
+		animRight: "fadeInLeft",
+		animSpeed: 600,
+		offset: 0
+	});
 }
