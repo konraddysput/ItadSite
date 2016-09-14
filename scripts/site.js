@@ -3159,7 +3159,7 @@ jQuery.easing.jswing=jQuery.easing.swing;jQuery.extend(jQuery.easing,{def:"easeO
 !function(t,e,n,o){"use strict";function i(e,n){a=this,this.element=t(e),this.options=t.extend({},p,n),this._defaults=p,this._name=r,this.init()}var r="ripples",a=null,p={};i.prototype.init=function(){var n=this.element;n.on("mousedown touchstart",function(o){if(!a.isTouch()||"mousedown"!==o.type){n.find(".ripple-container").length||n.append('<div class="ripple-container"></div>');var i=n.children(".ripple-container"),r=a.getRelY(i,o),p=a.getRelX(i,o);if(r||p){var s=a.getRipplesColor(n),u=t("<div></div>");u.addClass("ripple").css({left:p,top:r,"background-color":s}),i.append(u),function(){return e.getComputedStyle(u[0]).opacity}(),a.rippleOn(n,u),setTimeout(function(){a.rippleEnd(u)},500),n.on("mouseup mouseleave touchend",function(){u.data("mousedown","off"),"off"===u.data("animating")&&a.rippleOut(u)})}}})},i.prototype.getNewSize=function(t,e){return Math.max(t.outerWidth(),t.outerHeight())/e.outerWidth()*2.5},i.prototype.getRelX=function(t,e){var n=t.offset();return a.isTouch()?(e=e.originalEvent,1===e.touches.length?e.touches[0].pageX-n.left:!1):e.pageX-n.left},i.prototype.getRelY=function(t,e){var n=t.offset();return a.isTouch()?(e=e.originalEvent,1===e.touches.length?e.touches[0].pageY-n.top:!1):e.pageY-n.top},i.prototype.getRipplesColor=function(t){var n=t.data("ripple-color")?t.data("ripple-color"):e.getComputedStyle(t[0]).color;return n},i.prototype.hasTransitionSupport=function(){var t=n.body||n.documentElement,e=t.style,i=e.transition!==o||e.WebkitTransition!==o||e.MozTransition!==o||e.MsTransition!==o||e.OTransition!==o;return i},i.prototype.isTouch=function(){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)},i.prototype.rippleEnd=function(t){t.data("animating","off"),"off"===t.data("mousedown")&&a.rippleOut(t)},i.prototype.rippleOut=function(t){t.off(),a.hasTransitionSupport()?t.addClass("ripple-out"):t.animate({opacity:0},100,function(){t.trigger("transitionend")}),t.on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",function(){t.remove()})},i.prototype.rippleOn=function(t,e){var n=a.getNewSize(t,e);a.hasTransitionSupport()?e.css({"-ms-transform":"scale("+n+")","-moz-transform":"scale("+n+")","-webkit-transform":"scale("+n+")",transform:"scale("+n+")"}).addClass("ripple-on").data("animating","on").data("mousedown","on"):e.animate({width:2*Math.max(t.outerWidth(),t.outerHeight()),height:2*Math.max(t.outerWidth(),t.outerHeight()),"margin-left":-1*Math.max(t.outerWidth(),t.outerHeight()),"margin-top":-1*Math.max(t.outerWidth(),t.outerHeight()),opacity:.2},500,function(){e.trigger("transitionend")})},t.fn.ripples=function(e){return this.each(function(){t.data(this,"plugin_"+r)||t.data(this,"plugin_"+r,new i(this,e))})}}(jQuery,window,document);
 $(function(){
     initializeComponents();
-
+    setupLogo();
 })
 
 function initializeComponents(){
@@ -3172,21 +3172,8 @@ function initializeComponents(){
     });
     //setup timer
     initTimeClock();
-
-    //setup timeline with agenda
-    //use it if you want to display agenda with timeline styles 
-    // initTimeline();
-
-    //setup partners carousel
-    //use it if you want to display mini carousel with partners
-    // initOwlCarousel();
-
     $('[data-toggle="popover"]').popover();                  
 }
-
-// function initOwlCarousel(){
-//       $("#media-partners").owlCarousel();
-// }
 
 function initTimeClock(){
         var clock = $('.clock').FlipClock({
@@ -3200,12 +3187,21 @@ function initTimeClock(){
         clock.start();
 }
 
-// function initTimeline(){
-//     $('.timeline').timelify({
-//         animLeft: "fadeInRight",
-//         // animLeft: "",
-// 		animRight: "fadeInLeft",
-// 		animSpeed: 600,
-// 		offset: 0
-// 	});
-// }
+function setupLogo(){
+    var squareBeginning = "<div class='square logo-item itad-",
+        squareEnd = "'></div>"
+        times =0;
+
+     $("#logo-square-content").find(".row").each(function(index){
+        // times = Math.floor(Math.random() * 4) + 5 -index;
+        times = 6;
+         for(var i =0; i<index; i++){
+            $(this).append(squareBeginning+0+squareEnd);
+        }
+        for(var i = 0; i<times; i++){
+            var colorNumber = Math.floor(Math.random() * 9) + 1;
+            $(this).append(squareBeginning+colorNumber+squareEnd);
+        }
+       
+    });
+}

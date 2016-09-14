@@ -1,6 +1,6 @@
 $(function(){
     initializeComponents();
-
+    setupLogo();
 })
 
 function initializeComponents(){
@@ -13,21 +13,8 @@ function initializeComponents(){
     });
     //setup timer
     initTimeClock();
-
-    //setup timeline with agenda
-    //use it if you want to display agenda with timeline styles 
-    // initTimeline();
-
-    //setup partners carousel
-    //use it if you want to display mini carousel with partners
-    // initOwlCarousel();
-
     $('[data-toggle="popover"]').popover();                  
 }
-
-// function initOwlCarousel(){
-//       $("#media-partners").owlCarousel();
-// }
 
 function initTimeClock(){
         var clock = $('.clock').FlipClock({
@@ -41,12 +28,21 @@ function initTimeClock(){
         clock.start();
 }
 
-// function initTimeline(){
-//     $('.timeline').timelify({
-//         animLeft: "fadeInRight",
-//         // animLeft: "",
-// 		animRight: "fadeInLeft",
-// 		animSpeed: 600,
-// 		offset: 0
-// 	});
-// }
+function setupLogo(){
+    var squareBeginning = "<div class='square logo-item itad-",
+        squareEnd = "'></div>"
+        times =0;
+
+     $("#logo-square-content").find(".row").each(function(index){
+        // times = Math.floor(Math.random() * 4) + 5 -index;
+        times = 6;
+         for(var i =0; i<index; i++){
+            $(this).append(squareBeginning+0+squareEnd);
+        }
+        for(var i = 0; i<times; i++){
+            var colorNumber = Math.floor(Math.random() * 9) + 1;
+            $(this).append(squareBeginning+colorNumber+squareEnd);
+        }
+       
+    });
+}
