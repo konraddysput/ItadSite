@@ -1,7 +1,9 @@
 ## Official ITAD Site 
 
-###Author:
+###Authors:
 Konrad Dysput
+Radosław Waberski
+Grzegorz Kotlarz
 
 ###Technologies:
 * JavaScript
@@ -25,4 +27,5 @@ MIT
 ###Contact
 For more information contact me via e-mail:
 * konrad.dysput@gmail.com
-
+* rjwaberski@gmail.com
+* gkotlarz95@gmail.com
