@@ -27,18 +27,18 @@ $itad-10: #00969c;
 .intro-body{
   background-color: white  !important;
 }
- 
+
 .intro{
   background-color: #ffffff  !important;
 }
- 
+
 
 @media screen and (max-width: 1200px) {
   .clock,
   #map {
     display: none;
   }
-  
+
 }
 
 .table{
@@ -50,7 +50,7 @@ $itad-10: #00969c;
   td{
     padding-top:10px !important;
     border:none !important;
-    
+
   }
 }
 .square{
@@ -58,8 +58,8 @@ $itad-10: #00969c;
     width: 7vw;
     height: 7vw;
     margin-left:4px;
-    float:left;   
-    
+    float:left;
+
     &.large{
       width:15vw;
       height: 15vw;
@@ -78,10 +78,10 @@ $itad-10: #00969c;
 
   .logo-item{
     display: inline-block;
- 
+
   }
   .itad-1{
-      background-color: $itad-1;      
+      background-color: $itad-1;
   }
 
   .itad-2{
@@ -210,7 +210,6 @@ body{
   text-align: center;
 }
 .intro-body{
-  background-color: #121212 !important;
   padding-top: 100px !important;
   padding-bottom: 50px !important;
 }
@@ -252,13 +251,8 @@ p{
   margin:5px;
 }
 
-.localization{
-    background-image: url("cw.jpg") !important;
-    height: 500px !important;
-    background-attachment: fixed !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+#localization{
+  padding-bottom: 20px;
 }
 
 .lokal{
@@ -267,11 +261,15 @@ p{
 }
 
 #map{
-  margin-top: -70px !important;
   min-height: 500px;
   min-width: 500px;
+  left:0 !important;
   width: 100% !important;
-  right: -100px;
+  padding-bottom: 120px !important;
+}
+
+.map-section{
+margin-bottom: 50px !important;
 }
 
 .clock{
@@ -747,4 +745,23 @@ p{
 .organizer-avatar {
   height: 165px;
   width: 165px;
+}
+
+.navbar.navbar-custom.navbar-fixed-top{
+  background-color: white !important;
+  color: black !important;
+}
+
+.navbar.navbar-custom.navbar-fixed-top.top-nav-collapse{
+  background-color: rgba(0,0,0,.25) !important;
+  color: white !important;
+}
+
+.clock.center.clock-container-position.flip-clock-wrapper{
+  //style dla zegara
+}
+
+.hideme
+{
+    opacity:0;
 }

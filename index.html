@@ -78,11 +78,11 @@
                     <!--/Main Logo-->
                     <!--Logo square content-->
                     <div id="logo-square-content">
-                        <div class="row">                          
+                        <div class="row">
                         </div>
                         <div class="row">
                         </div>
-                        <div class="row">   
+                        <div class="row">
                         </div>
                     </div>
                         <!--/Logo square content-->
@@ -91,7 +91,7 @@
     </header>
 
     <!-- News Section -->
-    <div class="white news">
+    <div class="white news hideme">
       <section id="news" class="container content-section text-center">
 
         <!-- HERE REPLACE TEMPORARY CONTENT TO DISPLAY NEW NEWS -->
@@ -221,11 +221,11 @@
     </div>
 
  <!-- Agenda Section -->
-    <div class="black">
-      <section id="agenda" class="container content-section text-center">
+    <div class="white">
+      <section id="agenda" class="container content-section text-center hideme">
         <div class="row">
             <h2>Agenda</h2>
-            <hr />            
+            <hr />
             <!--<table class="table">
                 <thead>
                     <tr>
@@ -264,7 +264,7 @@
                         <td>15.45 - 16.00</td>
                         <td>Przerwa</td>
                         <td></td>
-                    </tr>               
+                    </tr>
 
                 </tbody>
             </table>     -->
@@ -381,7 +381,7 @@
     </div>
 
 <!-- Partners Section -->
-<div class="white">
+<div class="white hideme">
     <section id="partners" class="container content-section text-center">
         <div class="row">
             <h2>Partnerzy Wydarzenia</h2>
@@ -481,32 +481,31 @@
     </section>
 </div>
     <!-- Localization Section -->
-    <div class="black localization">
-    <section id="localization" class="container content-section text-left">
+
+    <div class="white hideme">
+    <section id="localization" class="container content-section text-center">
         <div class="row">
-            <!-- Map Section -->
-            <div class="col-sm-6 lokal">
-                <br />
-                <h2>Lokalizacja </h2>
-                <p class="left">Centrum wykładowe PP</p>
-                <p class="left">Sala 4 - Aula Główna</p>
-                <p class="left">Ul. Piotrowo 4a</p>
-            </div>
-            <div class="col-sm-6">
-              <div id="map" style="overflow:hidden !Important"></div>
+            <div class="col-lg-10  col-lg-offset-1">
+              <h2>Lokalizacja </h2>
+              <p class="left">Centrum wykładowe PP</p>
+              <p class="left">Sala 4 - Aula Główna</p>
+              <p class="left">Ul. Piotrowo 4a</p>
+
             </div>
         </div>
     </section>
-</div>
+    <div id="map" style="overflow:hidden !Important"></div>
+    </div>
+
 
 <!-- Organizers Section -->
-<div class="white">
+<div class="white hideme">
     <section id="organizers" class="container content-section text-center">
         <div class="row">
             <h2>Organizatorzy Wydarzenia</h2>
             <hr />
             <div class="col-lg-8 col-lg-offset-2">
-              
+
                 <div class="row">
                     <div class="col-lg-4 col-xs-4">
                         <img class="img-circle img-responsive organizer-avatar" src="img/organizers/julian.jpg" alt="Mateusz Bartos">
@@ -552,7 +551,7 @@
                         <img class="img-circle organizer-avatar img-responsive" src="">
                         <h4 class="text-centered btn-block">Przemysław<br/>Walkowiak</h4>
                     </div>
-             
+
                 </div>
               </div>
         </div>
@@ -560,8 +559,8 @@
 </div>
 
     <!-- Contact Section -->
-    <div class="black">
-    <section id="contact" class="container content-section text-center">
+    <div class="black ">
+    <section id="contact" class="container content-section text-center hideme">
         <div class="row">
             <div class="col-lg-10  col-lg-offset-1">
               <h2>Kontakt</h2>
@@ -587,6 +586,6 @@
 
   </div>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-    <script src="./scripts/site.js"></script>    
+    <script src="./scripts/site.js"></script>
 	</body>
 </html>

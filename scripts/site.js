@@ -3101,8 +3101,8 @@ function initializeComponents(){
     });
     //setup timer
     initTimeClock();
-    $('[data-toggle="popover"]').popover();        
-     initTimeline();          
+    $('[data-toggle="popover"]').popover();
+     initTimeline();
 }
 
 function initTimeClock(){
@@ -3132,7 +3132,7 @@ function setupLogo(){
             var colorNumber = Math.floor(Math.random() * 9) + 1;
             $(this).append(squareBeginning+colorNumber+squareEnd);
         }
-       
+
     });
 }
 
@@ -3146,3 +3146,27 @@ function initTimeline(){
 		offset: 0
 	});
 }
+
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2 - 350;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},500);
+
+            }
+
+        });
+
+    });
+
+});
