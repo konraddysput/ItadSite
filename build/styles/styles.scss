@@ -20,7 +20,7 @@ $itad-10: #00969c;
 }
 
 .flip-clock-label{
-  display:none !important;
+    display: none !important;
 }
 
 
@@ -34,7 +34,7 @@ $itad-10: #00969c;
 
 
 @media screen and (max-width: 1200px) {
-  .clock,
+  .clock-div,
   #map {
     display: none;
   }
@@ -196,6 +196,7 @@ body{
   border: 2px solid #c6c6c6;
   background-color: white;
   color:  #343434;
+  max-width: none;
 }
 .black{
   padding-bottom:100px;
@@ -766,3 +767,8 @@ margin-bottom: 50px !important;
 {
     opacity:0;
 }
+
+// #clock-header-text {
+//   color:#333333; 
+//   margin-left:325px;
+// }
