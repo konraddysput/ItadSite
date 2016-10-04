@@ -227,7 +227,6 @@ body{
 
 #partners{
   padding-top: 200px !important;
-  padding-bottom: 250px !important;
   img{
     width:120px;
     height:120px;
@@ -282,8 +281,11 @@ margin-bottom: 50px !important;
 
 
 .carousel{
-    margin-left: -7.666%;
-    margin-right: -7.666%;
+    // margin-left: -7.666%;
+    // margin-right: -7.666%;
+    img{
+      width:100vw;
+    }
 }
 
 
@@ -302,9 +304,9 @@ margin-bottom: 50px !important;
         }
 }
 
-.carousel-inner>.item{
-    height: 450px !important;
-}
+// .carousel-inner>.item{
+//     height: 450px !important;
+// }
 .owl-carousel img{
     width:120px;
     height: 120px;
@@ -748,15 +750,29 @@ margin-bottom: 50px !important;
   width: 165px;
   margin: 0 auto;
 }
+.default-img-display{
+  width:150px;
+  height:90px
+}
+.rotate-image-90
+{
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
 
 .navbar.navbar-custom.navbar-fixed-top{
   background-color: white !important;
   color: black !important;
+  &:hover{
+    color: black !important;
+  }
 }
 
 .navbar.navbar-custom.navbar-fixed-top.top-nav-collapse{
-  background-color: rgba(0,0,0,.25) !important;
+  background-color: rgba(0,0,0,.75) !important;
   color: white !important;
+  
 }
 
 .clock.center.clock-container-position.flip-clock-wrapper{
