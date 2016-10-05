@@ -27,7 +27,7 @@ function initializeComponents(){
 
     //set carousels
     $('.carousel').carousel({
-        interval: 500000
+        interval: 2500
     });
     //setup timer
     initTimeClock();

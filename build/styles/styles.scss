@@ -33,10 +33,13 @@ $itad-10: #00969c;
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px)
+and (min-device-width : 320px) 
+and (min-device-width : 480px)  {
   .clock-div,
   #map {
     display: none;
+    visibility: hidden;
   }
 
 }
@@ -175,7 +178,6 @@ body{
 .partner-logo{
     display:inline;
     .img-logo{
-        width:200px;
         height:200px;
     }
 }
@@ -228,7 +230,6 @@ body{
 #partners{
   padding-top: 200px !important;
   img{
-    width:120px;
     height:120px;
   }
   label{
@@ -284,7 +285,7 @@ margin-bottom: 50px !important;
     // margin-left: -7.666%;
     // margin-right: -7.666%;
     img{
-      width:100vw;
+      height:650px;
     }
 }
 
@@ -774,17 +775,7 @@ margin-bottom: 50px !important;
   color: white !important;
   
 }
-
-.clock.center.clock-container-position.flip-clock-wrapper{
-  //style dla zegara
-}
-
 .hideme
 {
     opacity:0;
 }
-
-// #clock-header-text {
-//   color:#333333;
-//   margin-left:325px;
-// }
