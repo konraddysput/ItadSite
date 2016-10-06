@@ -1,9 +1,10 @@
 ## Official ITAD Site 
 
 ###Authors:
-Konrad Dysput
+Konrad Dysputs
 Radosław Waberski
 Grzegorz Kotlarz
+Mateusz Bartos
 
 ###Technologies:
 * JavaScript
@@ -29,3 +30,4 @@ For more information contact me via e-mail:
 * konrad.dysput@gmail.com
 * rjwaberski@gmail.com
 * gkotlarz95@gmail.com
+* mateusz.bartos@studentpartner.com
