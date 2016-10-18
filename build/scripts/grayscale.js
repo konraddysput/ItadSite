@@ -32,13 +32,25 @@ $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
 
+// function init(){
+//         var uluru = {lat: 52.403744, lng: 16.949434};
+//         var map = new google.maps.Map(document.getElementById('map'), {
+//           zoom: 4,
+//           center: uluru
+//         });
+//         var marker = new google.maps.Marker({
+//           position: uluru,
+//           map: map
+//         });
+// }
+
 // Google Maps Scripts
 var map = null;
 // When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(52.403744, 16.949434));
-});
+// google.maps.event.addDomListener(window, 'load', init);
+// google.maps.event.addDomListener(window, 'resize', function() {
+//     map.setCenter(new google.maps.LatLng(52.403744, 16.949434));
+// });
 
 function init() {
     // Basic options for a simple Google Map

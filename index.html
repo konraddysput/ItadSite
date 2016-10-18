@@ -63,21 +63,22 @@
                 <div class="logo-container">
                     <!--Main Logo-->
                     <div class="row">
+                         <div class="row" style="margin-left:0%"> 
+                                <h1 style="color:#1685c9;font-size:40px;text-align:left;">19.10.2016</h1>
+                            </div> 
                         <div class="square large logo">
                             <div>
                                 <span>IT</span>
                             </div>
-                        </div>
-                        <div class="center"> 
-                            <h1 style="color:#1685c9;font-size:90px;">19.10.2016</h1>
-                        </div>
-                        <div>
+                           
+                        </div>       
                             <div class="row">
-                                <div class="clock center clock-container-position">
-                                    <h2>clock</h2>
-                                </div>    
+                                <div class="center clock-container-position">
+                                    <div class="clock">
+                                    <h2>clock</h2> 
+                                    </div>                                
+                                </div>                 
                             </div>
-                        </div>
                     </div>
                     <!--/Main Logo-->
                     <!--Logo square content-->
@@ -182,49 +183,6 @@
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>Agenda</h2>
                     <hr />
-                    <!--<table class="table">
-                <thead>
-                    <tr>
-                        <th>Godzina</th>
-                        <th>Temat</th>
-                        <th>Prelegent</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>12.30 - 13.30</td>
-                        <td>Rejestracja</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>13.30 - 13.45</td>
-                        <td>Uroczyste otwarcie</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>13.45 - 14.55</td>
-                        <td>Uroczyste otwarcie</td>
-                        <td>Rafał Czupryński</td>
-                    </tr>
-                     <tr>
-                        <td>14.55 - 15.10</td>
-                        <td>Przerwa</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>15.10 - 15.45</td>
-                        <td>Tech Talk</td>
-                        <td>Microsoft prelegent - Microsoft Redmond</td>
-                    </tr>
-                    <tr>
-                        <td>15.45 - 16.00</td>
-                        <td>Przerwa</td>
-                        <td></td>
-                    </tr>
-
-                </tbody>
-            </table>     -->
-
                     <div class="timeline">
                         <h2>12:00</h2>
                         <ul class="timeline-items">
@@ -252,20 +210,6 @@
                                 <time>13:30</time>
                             </li>
                             <li class="is-hidden timeline-item">
-                                <h3>Azure Machine Learning</h3>
-                                <hr>
-                                <h5>Łukasz Grala</h5>
-                                <hr>
-                                <div>
-                                    <p>To be announced</p>
-                                    <hr>
-                                </div>
-                                <time>13:45</time>
-                            </li>
-                        </ul>
-                        <h2>14:00</h2>
-                        <ul class="timeline-items">
-                            <li class="is-hidden timeline-item">
                                 <h3>Od pomysłu do startup'u</h3>
                                 <hr>
                                 <h5>Dominik Wojciekiewicz</h5>
@@ -274,9 +218,10 @@
                                     <p>Chodzi Ci startup po głowie? Masz pomysł, ale nie wiesz co dalej? Przyjdź i się dowiedz w jaki sposób Twój pomysł, może stać się startup'em.</p>
                                     <hr>
                                 </div>
-                                <time>14:25</time>
+                                <time>13:45</time>
                             </li>
                         </ul>
+                        <h2>14:00</h2>
                         <h2>15:00</h2>
                         <ul class="timeline-items">
                             <li class="is-hidden timeline-item inverted">
@@ -349,7 +294,7 @@
                                         innych. Prelekcję poprowadzi pracownik Katedry Animacji UAP - Miłosz Margański</p>
                                     <hr>
                                 </div>
-                                <time>19:05</time>
+                                <time>19:00</time>
                             </li>
                         </ul>
                     </div>
@@ -417,7 +362,7 @@
                     <div class="row" style="margin-bottom:25px;">
                          <div class="col-lg-4">
                             <div class="partner-logo">
-                                <img class="img-logo" src="./img/partners/setapp.jpg" alt="Setapp">
+                                <img class="img-logo" src="./img/partners/setapp.png" alt="Setapp">
                             </div>
                             <div class="row">
                                 <label>Setapp</label>
@@ -433,7 +378,7 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="partner-logo">
-                                <img class="img-logo" src="./img/partners/helion.jpg" alt="Helion">
+                                <img class="img-logo" src="./img/partners/helion.png" alt="Helion">
                             </div>
                             <div class="row">
                                 <label>Helion</label>
@@ -705,7 +650,9 @@
         </section>
 
     </div>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+     <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbe0ySdO1cGOgKmgRF1h-Efny10FouuSI&callback=init">
+    </script>
     <script src="./scripts/site.js"></script>
 </body>
 

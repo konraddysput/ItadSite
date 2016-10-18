@@ -1,6 +1,6 @@
 var gulp = require('gulp'), 				// importing gulp package
 	uglify =require('gulp-uglify'),			//importing gulp uglify to minify javascrit[]
-	sass = require('gulp-ruby-sass'),		// importing gulp sass compiler
+	sass = require('gulp-sass'),		// importing gulp sass compiler
 	plumber = require('gulp-plumber'),
 	livereload = require('gulp-livereload'),
 	concat = require('gulp-concat');
@@ -15,13 +15,10 @@ gulp.task('scripts', function(){
 //Styles task
 //Uglify sass to css
 gulp.task('custom-styles', function(){
-	 return sass('build/styles/*.scss',{
-	 	style:'compressed'
-	 })
-	.pipe(plumber())
-    .on('error', sass.logError)
-    .pipe(gulp.dest('build/styles'))
-    .pipe(livereload());
+	 return gulp.src('build/styles/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('build/styles')
+    .pipe(livereload()));
 });
 
 //concat css files

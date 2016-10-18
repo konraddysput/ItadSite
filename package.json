@@ -4,7 +4,8 @@
   "description": "official ITAD PUT.NET Site",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-install": "^0.6.0"
   },
   "devDependencies": {},
   "scripts": {
