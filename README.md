@@ -1,12 +1,12 @@
 ## Official ITAD Site 
 
-###Authors:
+### Authors:
 Konrad Dysputs
 Radosław Waberski
 Grzegorz Kotlarz
 Mateusz Bartos
 
-###Technologies:
+### Technologies:
 * JavaScript
 * jQuery
 * SASS
@@ -14,20 +14,20 @@ Mateusz Bartos
 * HTML
 * gulp
 
-###How to run?
+### How to run?
 Open file index.html
 
-###Requirements
+### Requirements
 * gulp* 
 * SASS compiller*
-* webbrowser
+* web browser
 
-###Licence
+### Licence
 MIT
 
-###Contact
+### Contact
 For more information contact me via e-mail:
-* konrad.dysput@gmail.com
+* konrad.dysput@studentpartner.com
 * rjwaberski@gmail.com
 * gkotlarz95@gmail.com
 * mateusz.bartos@studentpartner.com
